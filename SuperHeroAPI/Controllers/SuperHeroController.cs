@@ -37,14 +37,14 @@ namespace SuperHeroAPI.Controllers
         }
 
         // POST:
-        [HttpPost]
-        public async Task<ActionResult<List<SuperHero>>> AddHero(SuperHero hero)
-        {
-            DataContext.SuperHeroes.Add(hero);
-            await DataContext.SaveChangesAsync();
+        //[HttpPost]
+        //public async Task<ActionResult<List<SuperHero>>> AddHero(SuperHero hero)
+        //{
+        //    DataContext.SuperHeroes.Add(hero);
+        //    await DataContext.SaveChangesAsync();
 
-            return Ok(await DataContext.SuperHeroes.ToListAsync());
-        }
+        //    return Ok(await DataContext.SuperHeroes.ToListAsync());
+        //}
 
         // PUT:
         [HttpPut]
